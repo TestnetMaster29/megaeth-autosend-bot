@@ -1,0 +1,62 @@
+# ETH Faucet Consolidator
+
+A simple tool to consolidate testnet ETH from multiple wallets to a single address.
+
+## Setup
+
+🔰 Install requirements:
+```bash
+git clone https://github.com/TestnetMaster29/megaeth-autosend-bot.git
+cd megaeth-autosend-bot
+```
+```bash
+pip install -r requirements.txt
+```
+
+🔰 Add PrivateKeys
+```bash
+nano private_keys.txt
+```
+
+🔰Add Target Address
+```bash
+nano target_address.txt
+```
+
+🔶 RUN : 
+```bash
+python bot.py
+```
+
+
+### Key Improvements Over Original:
+
+1. **Simplified Workflow**:
+   - Only does consolidation (no faucet claiming or captcha solving)
+   - Uses simple text files for input
+
+2. **Better Error Handling**:
+   - Gracefully continues if one wallet fails
+   - Better transaction monitoring
+
+3. **More Transparent**:
+   - Shows exact amounts being sent
+   - Displays gas costs
+   - Shows transaction confirmations
+
+4. **Safer**:
+   - Clearly shows what will be sent before sending
+   - Leaves reserve for gas
+
+To use this, just:
+1. Put your private keys in `private_keys.txt`
+2. Put your target address in `target_address.txt`
+3. Run `python bot.py`
+
+The script will automatically:
+- Check each wallet's balance
+- Calculate how much can be sent (leaving 0.001 ETH)
+- Send the ETH to your main wallet
+- Show transaction confirmations
+
+Last updated:
