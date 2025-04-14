@@ -59,4 +59,4 @@ The script will automatically:
 - Send the ETH to your main wallet
 - Show transaction confirmations
 
-Last updated: Mon Apr 14 13:36:28 UTC 2025
+Last updated: Mon Apr 14 18:48:22 UTC 2025
